@@ -1,10 +1,20 @@
-import FIlm from "./Film";
+import Film from "./Film";
 
-  function Filmovi({filmovi}) {
+  function Filmovi({filmovi, kriterijum, dodaj}) {
     return (
-    <div className="row">
-          {filmovi.map((film)=> <div className="col-sm-3"><FIlm  key={film.id} film={film}></FIlm><br /></div>)}
-    </div>
+      <div className="filmovi">
+            <div className="row">
+            {kriterijum==""
+            ?
+            filmovi.map((film)=> <div className="col-sm-3"><Film dodaj={dodaj} key={film.id} film={film}></Film><br /></div>)
+            :
+            <>
+            {filmovi.filter((film)=>film.naziv.toLowerCase().includes(kriterijum.toLowerCase()))
+            .map((film)=> <div className="col-sm-3"><Film dodaj={dodaj} key={film.id} film={film}></Film><br /></div>)}
+            </>
+            }  
+            </div>
+      </div>
 
         );
 

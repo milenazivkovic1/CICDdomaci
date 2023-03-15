@@ -1,4 +1,4 @@
-function Film({film}) {
+function Film({film, dodaj}) {
 
 
     return (
@@ -10,7 +10,7 @@ function Film({film}) {
           <p className="card-title">{film.naziv} </p>
           <p className="card-text">Godina: {film.godina} <br /> 
           Producent: {film.producent} <br/> Glavne uloge: {film.glavneUloge} <br /> Zanr: {film.zanr} <br /> </p>
-          <a href="#" className="btn btn-primary">Dodaj u listu gledanja</a>
+          <button href="#" className="btnDodaj" onClick={()=>dodaj(film.id)}> Dodaj u listu </button>
         </div>
       </div>
 

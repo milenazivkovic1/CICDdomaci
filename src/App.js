@@ -6,8 +6,11 @@ import ONama from './components/ONama';
 import Footer from './components/Footer';
 import Filmovi from './components/Filmovi';
 import { useState } from 'react';
+import ListaGledanja from './components/ListaGledanja';
 
 function App() {
+  const [listaFilmova,setListaF]=useState([]);
+
   const[sviFilmovi] = useState([
 
     {
@@ -18,6 +21,7 @@ function App() {
         producent:"Denis Villeneuve",
         glavneUloge: "Ryan Gosling, Harrison Ford, Ana de Armas",
         zanr: "Sci-fi, action",
+        lista: 0
     },
     {
       id:2,
@@ -27,6 +31,7 @@ function App() {
       producent:"Neil Burger",
       glavneUloge: "Shailene Woodley, Theo James, Miles Teller",
       zanr: "Sci-fi",
+      lista: 0
     },
     {
       id:3,
@@ -36,6 +41,7 @@ function App() {
       producent:"James Cameron",
       glavneUloge: "Sam Worthington, Zoe Saldana",
       zanr: "Sci-fi",
+      lista: 0
     },
     {
       id:4,
@@ -44,7 +50,8 @@ function App() {
       godina:"2022",
       producent:"Rian Johnson",
       glavneUloge: "Kate Hudson, Daniel Craig,Madelyn Cline",
-      zanr: "Myster, Crime",
+      zanr: "Mystery, Crime",
+      lista: 0
     },
     {
       id:5,
@@ -54,6 +61,7 @@ function App() {
       producent:"Olivia Wilde",
       glavneUloge: "Florence Pugh, Olivia Wilde, Chris Pine",
       zanr: "Thriller",
+      lista: 0
     },
     {
       id:6,
@@ -63,6 +71,7 @@ function App() {
       producent:" Denis Villeneuve",
       glavneUloge: "Timothée Chalamet, Rebecca Ferguson, Oscar Isaac",
       zanr: "Sci-fi Adventure",
+      lista: 0
     },
     {
       id:7,
@@ -72,6 +81,7 @@ function App() {
       producent:"Rian Johnson",
       glavneUloge: "Daniel Craig,Chris Evans, Ana de Armas",
       zanr: "Mystery, Crime",
+      lista: 0
     },
     {
       id:8,
@@ -81,21 +91,39 @@ function App() {
       producent:"Ol Parker",
       glavneUloge: "George Clooney and Julia Roberts",
       zanr: "Romantic Comedy",
+      lista: 0
     },
 
 
 
   ]);
 
+  const [krterijumPretrage,setKriterijumPretrage]=useState("");
+
+  function pretrazi(kriterijum){
+    setKriterijumPretrage(kriterijum);
+  }
+
+  function dodaj(id){
+    for(var i=0;i<sviFilmovi.length;i++){
+      if(sviFilmovi[i].id==id){
+        sviFilmovi[i].lista=1;
+      }
+    }
+    var niz = sviFilmovi.filter((film)=>film.lista==1);
+    setListaF(niz);
+  }
+
   return (
 
     <div>
     <BrowserRouter>
-        <NavBar></NavBar>
+        <NavBar pretrazi={pretrazi}></NavBar>
         <Routes>
             <Route path="/" element={<Home></Home>}></Route>
             <Route path="/onama" element={<ONama></ONama>}></Route>
-            <Route path="/filmovi" element={<Filmovi  filmovi={sviFilmovi}></Filmovi>}></Route>
+            <Route path="/filmovi" element={<Filmovi kriterijum={krterijumPretrage} filmovi={sviFilmovi} dodaj={dodaj}></Filmovi>}></Route>
+            <Route path="/listaGledanja" element={<ListaGledanja kriterijum={krterijumPretrage}  filmovi={listaFilmova}></ListaGledanja>}></Route>
           </Routes>
      </BrowserRouter>
      <Footer></Footer>

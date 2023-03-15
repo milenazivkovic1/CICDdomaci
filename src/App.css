@@ -161,6 +161,7 @@ h4{
   font-size: 20px;
   text-align: justify;
   padding-left: 200px;
+  padding-bottom: 20px;
 }
 
   /* za 2 diva */
@@ -308,6 +309,8 @@ h4{
     overflow: hidden;
     background-color: #06113C;
     opacity: 90%;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
 
   }
 
@@ -339,4 +342,21 @@ h4{
   }
 
 
-  /*kasnije dodati jos css za dugme dodaj*/
+  /*dugme dodaj*/
+  .btnDodaj{
+    transition: all .5s ease;
+    color: #FF8C32;
+    line-height: 1;
+    font-size: 17px;
+    background-color : rgb(240, 239, 239);
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    margin-left: 130px;
+  }
+
+  .btnDodaj:hover {
+    color: #f1f1f1;
+    background-color:#5c6e89 ;
+}
