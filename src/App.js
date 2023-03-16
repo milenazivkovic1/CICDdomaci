@@ -114,6 +114,16 @@ function App() {
     setListaF(niz);
   }
 
+  function izbaci(id){
+    for(var i=0;i<sviFilmovi.length;i++){
+      if(sviFilmovi[i].id==id){
+        sviFilmovi[i].lista=0;
+      }
+    }
+    var niz = sviFilmovi.filter((film)=>film.lista==1);
+    setListaF(niz);
+  }
+
   return (
 
     <div>
@@ -123,7 +133,7 @@ function App() {
             <Route path="/" element={<Home></Home>}></Route>
             <Route path="/onama" element={<ONama></ONama>}></Route>
             <Route path="/filmovi" element={<Filmovi kriterijum={krterijumPretrage} filmovi={sviFilmovi} dodaj={dodaj}></Filmovi>}></Route>
-            <Route path="/listaGledanja" element={<ListaGledanja kriterijum={krterijumPretrage}  filmovi={listaFilmova}></ListaGledanja>}></Route>
+            <Route path="/listaGledanja" element={<ListaGledanja kriterijum={krterijumPretrage}  filmovi={listaFilmova} izbaci={izbaci}></ListaGledanja>}></Route>
           </Routes>
      </BrowserRouter>
      <Footer></Footer>

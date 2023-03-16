@@ -6,11 +6,11 @@ import Film from "./Film";
             <div className="row">
             {kriterijum==""
             ?
-            filmovi.map((film)=> <div className="col-sm-3"><Film dodaj={dodaj} key={film.id} film={film}></Film><br /></div>)
+            filmovi.map((film)=> <div className="col-sm-3"><Film dodaj={dodaj} key={film.id} film={film} mod={1}></Film><br /></div>)
             :
             <>
             {filmovi.filter((film)=>film.naziv.toLowerCase().includes(kriterijum.toLowerCase()))
-            .map((film)=> <div className="col-sm-3"><Film dodaj={dodaj} key={film.id} film={film}></Film><br /></div>)}
+            .map((film)=> <div className="col-sm-3"><Film dodaj={dodaj} key={film.id} film={film} mod={1}></Film><br /></div>)}
             </>
             }  
             </div>
