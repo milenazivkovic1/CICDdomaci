@@ -1,6 +1,6 @@
 import Film from "./Film";
 
-function ListaGledanja({filmovi, kriterijum, mod}) {
+function ListaGledanja({filmovi, kriterijum, izbaci}) {
     return (
         <div className="listaGledanja">
     <div className="row">

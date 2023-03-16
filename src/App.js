@@ -7,9 +7,12 @@ import Footer from './components/Footer';
 import Filmovi from './components/Filmovi';
 import { useState } from 'react';
 import ListaGledanja from './components/ListaGledanja';
+import CopyButton from "./components/CopyButton";
 
 function App() {
   const [listaFilmova,setListaF]=useState([]);
+
+  const email = "moviemania@gmail.com";
 
   const[sviFilmovi] = useState([
 
@@ -136,6 +139,7 @@ function App() {
             <Route path="/listaGledanja" element={<ListaGledanja kriterijum={krterijumPretrage}  filmovi={listaFilmova} izbaci={izbaci}></ListaGledanja>}></Route>
           </Routes>
      </BrowserRouter>
+     <div className="kontejner"> <CopyButton textToCopy={email}/> </div>
      <Footer></Footer>
   </div>
   );
