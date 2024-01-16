@@ -12,28 +12,28 @@ import CopyButton from "./components/CopyButton";
 function App() {
   const [listaFilmova,setListaF]=useState([]);
 
-  const email = "moviemania@gmail.com";
+  const email = "milenazivkovic11@gmail.com";
 
   const[sviFilmovi] = useState([
 
     {
         id:1,
-        slika: "https://m.media-amazon.com/images/M/MV5BMjM3NjcxNDM4Ml5BMl5BanBnXkFtZTgwMjI4NDIzMzI@._V1_.jpg",
-        naziv:"Blade Runner",
-        godina:"2017",
-        producent:"Denis Villeneuve",
-        glavneUloge: "Ryan Gosling, Harrison Ford, Ana de Armas",
-        zanr: "Sci-fi, action",
+        slika: "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg",
+        naziv:"Oppenheimer",
+        godina:"2023",
+        producent:"Christopher Nolan",
+        glavneUloge: "Cillian Murphy, Emily Blunt, Matt Damon",
+        zanr: "Biography, Drama, History",
         lista: 0
     },
     {
       id:2,
-      slika: "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71oka2eUBvL.jpg",
-      naziv:"Divergent",
-      godina:"2014",
-      producent:"Neil Burger",
-      glavneUloge: "Shailene Woodley, Theo James, Miles Teller",
-      zanr: "Sci-fi",
+      slika: "https://m.media-amazon.com/images/M/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+      naziv:"Barbie",
+      godina:"2023",
+      producent:"Greta Gerwig",
+      glavneUloge: "Ryan Gosling, Margot Robbie",
+      zanr: "Fantasy, Comedy",
       lista: 0
     },
     {
@@ -58,12 +58,12 @@ function App() {
     },
     {
       id:5,
-      slika: "https://wchsinsight.org/wp-content/uploads/2022/10/IMG_8266-636x900.jpg",
-      naziv:"Don't Worry Darling",
-      godina:"2022",
-      producent:"Olivia Wilde",
-      glavneUloge: "Florence Pugh, Olivia Wilde, Chris Pine",
-      zanr: "Thriller",
+      slika: "https://m.media-amazon.com/images/M/MV5BMjM3NjcxNDM4Ml5BMl5BanBnXkFtZTgwMjI4NDIzMzI@._V1_.jpg",
+      naziv:"Blade Runner",
+      godina:"2017",
+      producent:"Denis Villeneuve",
+      glavneUloge: "Ryan Gosling, Harrison Ford, Ana de Armas",
+      zanr: "Sci-fi, action",
       lista: 0
     },
     {

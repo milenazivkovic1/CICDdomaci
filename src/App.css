@@ -3,7 +3,7 @@
 }
 /* css za navigacioni meni */
 .nav {
-  background: #06113C; opacity: 0.8;
+  background: #2e063c; opacity: 0.8;
   color:white;
 	position: sticky;
   margin: auto !important;
@@ -47,7 +47,7 @@ h1:hover {
 }
 
 .nav__item__search{
-  background: #06113C;
+  background: #2c063c;
   display: inline-block;
   margin: 0px 30px;
   color: white;
@@ -79,7 +79,7 @@ a{
   width: 0%;
   height: 100%;
   border-radius: 50% 0% 50% 0%;
-  background-color: rgba(255, 249, 215, 0);
+  background-color: rgba(24, 0, 30, 0);
   transition: all 0.5s;
   z-index: -1;
 
@@ -87,7 +87,7 @@ a{
 
 .nav__item:hover:after {
   width: 100%;
-  background-color: #FF8C32;
+  background-color: #ffe032;
 }
 
 .nav__item:hover {
@@ -103,12 +103,12 @@ a{
   font-size: 17px;
   background-color: transparent;
   color: white;
-  background-color: #FF8C32;
+  background-color: #d7b300;
   border: none;
 }
 
 .nav input[type=text]:focus {
-  background-color: #FF8C32;
+  background-color: #ffe032;
   border-color: rgb(255, 249, 215);
   border: 1px;
 }
@@ -124,7 +124,7 @@ body, html {
   font-family: Arial, Helvetica, sans-serif;
 }
 .home, .onama, .row{
-  background-image: url("https://www.atomcreativemedia.com/wp-content/uploads/2018/09/orange-and-blue-movies-2.jpg");
+  background-image: url("https://wallpaperaccess.com/full/9320368.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -169,7 +169,7 @@ h4{
 
     display: flex;
     flex-wrap: wrap;
-    background: rgb(43,41,78);
+    background: rgb(68, 41, 78);
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
@@ -220,7 +220,7 @@ h4{
 
   .home-text:hover:after {
     width: 100%;
-    background-color: #fd9648;
+    background-color: #fdeb48;
   }
   .home-text:hover {
     transform: scale(1.1);
@@ -259,7 +259,7 @@ h4{
 
   .onama-text:hover:after {
     width: 100%;
-    background-color:#fd9648 ;
+    background-color:#fde248 ;
   }
   .onama-text:hover {
     transform: scale(1.1);
@@ -268,7 +268,7 @@ h4{
 
   /*FOOTER*/
   .footer-container {
-    background-color: #5c6e89;
+    background-color: #815c89;
     display: flex;
     justify-content: space-between;
     height: 50px;
@@ -303,11 +303,11 @@ h4{
   }
 
   .card {
-    border: #06113C;
+    border: #37063c;
     border-radius: 15px;
     inline-size: 350px;
     overflow: hidden;
-    background-color: #06113C;
+    background-color: #31063c;
     opacity: 90%;
     padding-bottom: 20px;
     margin-bottom: 50px;
@@ -325,7 +325,7 @@ h4{
     color: #fff;
     margin-bottom: -10px;
     margin-top: -7px;
-    background-color: #fd9648;
+    background-color: #fdd948;
     padding-bottom: 7px;
     padding-top: 5px;
 
@@ -345,7 +345,7 @@ h4{
   /*dugme dodaj*/
   .btnDodaj{
     transition: all .5s ease;
-    color: #FF8C32;
+    color: #d932ff;
     line-height: 1;
     font-size: 17px;
     background-color : rgb(240, 239, 239);
@@ -357,8 +357,8 @@ h4{
   }
 
   .btnDodaj:hover {
-    color: #f1f1f1;
-    background-color:#5c6e89 ;
+    color: #ffffff;
+    background-color:#835c89 ;
 }
 
  /*za kopiranje*/
@@ -368,7 +368,7 @@ h4{
 
 
   .dugme-kopiranje {
-    background-color: #5c6e89;
+    background-color: #805c89;
     color: white; 
     text-align: center;
     margin-right: 10px;
@@ -400,8 +400,8 @@ h4{
   }
 
   .kontejner{
-    background-color: #5c6e89;
-    background: #5c6e89;
+    background-color: #785c89;
+    background: #7f5c89;
     text-align: right;
     display:-ms-inline-grid;
     justify-content: space-between;
@@ -413,10 +413,10 @@ h4{
 
   body::-webkit-scrollbar {
     width: 10px;
-    background-color: #06113C;
+    background-color: #2d063c;
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #fd9648;
+    background-color: #fdd948;
     border-radius: 10px;
   }
