@@ -96,7 +96,16 @@ function App() {
       zanr: "Romantic Comedy",
       lista: 0
     },
-  
+    {
+      id:9,
+      slika: "https://m.media-amazon.com/images/M/MV5BNGIyYWMzNjktNDE3MC00YWQyLWEyMmEtN2ZmNzZhZDk3NGJlXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+      naziv:"Poor Things",
+      godina:"2023",
+      producent:"Yorgos Lanthimos",
+      glavneUloge: "Emma Stone, Mark Ruffalo, Willem Dafoe",
+      zanr: "Comedy, Drama, Romance",
+      lista: 0
+    },
 
 
   ]);
