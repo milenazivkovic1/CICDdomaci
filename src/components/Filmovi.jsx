@@ -4,7 +4,7 @@ import Film from "./Film";
     return (
       <div className="filmovi">
             <div className="row">
-            {kriterijum==""
+            {kriterijum===""
             ?
             filmovi.map((film)=> <div className="col-sm-3"><Film dodaj={dodaj} key={film.id} film={film} mod={1}></Film><br /></div>)
             :

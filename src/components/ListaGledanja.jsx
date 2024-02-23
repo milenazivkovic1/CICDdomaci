@@ -4,7 +4,7 @@ function ListaGledanja({filmovi, kriterijum, izbaci}) {
     return (
         <div className="listaGledanja">
     <div className="row">
-        {kriterijum==""
+        {kriterijum===""
         ?
         filmovi.map((film)=> <div className="col-sm-3"><Film  key={film.id} film={film}  mod={2} izbaci={izbaci}></Film><br /></div>)
         :

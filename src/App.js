@@ -118,21 +118,21 @@ function App() {
 
   function dodaj(id){
     for(var i=0;i<sviFilmovi.length;i++){
-      if(sviFilmovi[i].id==id){
+      if(sviFilmovi[i].id===id){
         sviFilmovi[i].lista=1;
       }
     }
-    var niz = sviFilmovi.filter((film)=>film.lista==1);
+    var niz = sviFilmovi.filter((film)=>film.lista===1);
     setListaF(niz);
   }
 
   function izbaci(id){
     for(var i=0;i<sviFilmovi.length;i++){
-      if(sviFilmovi[i].id==id){
+      if(sviFilmovi[i].id===id){
         sviFilmovi[i].lista=0;
       }
     }
-    var niz = sviFilmovi.filter((film)=>film.lista==1);
+    var niz = sviFilmovi.filter((film)=>film.lista===1);
     setListaF(niz);
   }
 

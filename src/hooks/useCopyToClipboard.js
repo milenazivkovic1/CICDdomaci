@@ -13,7 +13,7 @@ export const useCopyToClipboard = (timeDisabled = null) => {
     if (!isCopied) return;
     let timeOut = window.setTimeout(() => setCopied(false), timeDisabled);
     return () => window.clearTimeout(timeOut);
-  }, [isCopied]);
+  }, [isCopied, timeDisabled]); // Dodajemo timeDisabled u niz zavisnosti
 
   return [isCopied, handleCopy];
 };
